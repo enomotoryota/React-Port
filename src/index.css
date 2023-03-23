@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css?family=Sawarabi+Mincho");
+@import url("https://fonts.googleapis.com/earlyaccess/hannari.css");
+
+body {
+  background-color: rgb(241 245 249);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+}
+
+#pagedown {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.button:hover {
+  @apply transform duration-1000 scale-150;
+}
+
+.us {
+  @apply opacity-50 backdrop-blur;
+}
+
+.us1 {
+  @apply opacity-25 backdrop-blur;
+}
+
+.us2 {
+  @apply opacity-75 backdrop-blur;
+}
