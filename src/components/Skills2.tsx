@@ -13,6 +13,7 @@ import {
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
+
 const Skills2 = () => {
   return (
     <>
@@ -22,7 +23,7 @@ const Skills2 = () => {
         className="flex flex-col  items-center  bg-white
       xxl:py-80 xl:py-60 lg:py-40 md:py-20  xs:py-10 us"
       >
-        <motion.div
+        {/* <motion.div
           variants={{
             offscreen: {
               // 画面外の場合のスタイル
@@ -41,9 +42,9 @@ const Skills2 = () => {
           initial="offscreen" // 初期表示はoffscreen
           whileInView="onscreen" // 画面内に入ったらonscreen
           viewport={{ once: false, amount: 0 }}
-        >
+        > */}
           <h2 className="md:text-5xl xs:text-3xl md:mb-20 xs:mb-10">Skills</h2>
-        </motion.div>
+        {/* </motion.div> */}
 
         <div
           className="grid gap-x-10 gap-y-4 md:grid-cols-3 xs:grid-cols-1 mb-20 mx-10
@@ -53,7 +54,7 @@ const Skills2 = () => {
             variants={{
               offscreen: {
                 // 画面外の場合のスタイル
-                y: 100,
+                y: -25,
                 opacity: 0,
               },
               onscreen: {
@@ -61,7 +62,8 @@ const Skills2 = () => {
                 y: 0,
                 opacity: 1,
                 transition: {
-                  duration: 1,
+                  duration: 2.5,
+                  // type: "spring"
                 },
               },
             }}
@@ -85,7 +87,7 @@ const Skills2 = () => {
             variants={{
               offscreen: {
                 // 画面外の場合のスタイル
-                y: 100,
+                y: 25,
                 opacity: 0,
               },
               onscreen: {
@@ -93,7 +95,7 @@ const Skills2 = () => {
                 y: 0,
                 opacity: 1,
                 transition: {
-                  duration: 1.25,
+                  duration: 2.5,
                 },
               },
             }}
@@ -114,7 +116,7 @@ const Skills2 = () => {
             variants={{
               offscreen: {
                 // 画面外の場合のスタイル
-                y: 100,
+                y: -25,
                 opacity: 0,
               },
               onscreen: {
@@ -143,7 +145,7 @@ const Skills2 = () => {
             variants={{
               offscreen: {
                 // 画面外の場合のスタイル
-                y: 100,
+                y: 25,
                 opacity: 0,
               },
               onscreen: {
@@ -172,7 +174,7 @@ const Skills2 = () => {
             variants={{
               offscreen: {
                 // 画面外の場合のスタイル
-                y: 100,
+                y: -25,
                 opacity: 0,
               },
               onscreen: {
@@ -201,7 +203,7 @@ const Skills2 = () => {
             variants={{
               offscreen: {
                 // 画面外の場合のスタイル
-                y: 100,
+                y: 25,
                 opacity: 0,
               },
               onscreen: {

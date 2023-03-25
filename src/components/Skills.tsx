@@ -7,7 +7,7 @@ const Skills = () => {
     <>
       <div className="flex flex-col items-center mx-8 ">
         <div>
-          <motion.div
+          {/* <motion.div
             variants={{
               offscreen: {
                 // 画面外の場合のスタイル
@@ -26,9 +26,9 @@ const Skills = () => {
             initial="offscreen" // 初期表示はoffscreen
             whileInView="onscreen" // 画面内に入ったらonscreen
             viewport={{ once: false, amount: 0 }}
-          >
-            <h2 className="text-5xl mb-20  us">Skills</h2>
-          </motion.div>
+          > */}
+            <h2 className="md:text-5xl xs:text-3xl md:mb-20 xs:mb-10  us ">Skills</h2>
+          {/* </motion.div> */}
         </div>{" "}
         <div>
           <motion.div

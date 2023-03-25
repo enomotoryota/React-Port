@@ -50,3 +50,7 @@ p {
 .us2 {
   @apply opacity-75 backdrop-blur;
 }
+
+.responsive{
+  @apply xxl:my-80 xl:my-60 lg:my-40 md:my-20  xs:my-14
+}

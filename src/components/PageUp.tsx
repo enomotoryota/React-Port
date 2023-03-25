@@ -14,7 +14,7 @@ const PageUp = () => {
 
   // Scrollを検知しボタン表示のフラグを切り替え
   const watchScroll = () => {
-    const basePosition = 800;
+    const basePosition = 600;
     const scrollPosition = window.scrollY;
     setShowScrollToTop(basePosition <= scrollPosition);
   };
@@ -27,7 +27,7 @@ const PageUp = () => {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="scroll-to-top"
             >
-              <BsArrowUpCircle size={50} color={"#ADD8E6"} />
+              <BsArrowUpCircle size={50} color={"#ADD8E6"} className="bg-opacity-0" />
             </span>
           )}
         </div>

@@ -15,10 +15,13 @@ const Home = () => {
       <Navbar />
       <MyAvatar />
       <About />
-      <div className="flex flex-row justify-center  xxl:my-80 xl:my-60 lg:my-40 md:my-20  xs:my-10 ">
+      <div className="h-screen flex flex-col justify-center ">
+      <div className="flex flex-row justify-center">
         <Skills />
         <Works />
       </div>
+      </div>
+
       <Contact />
       <Copy />
       <PageUp />

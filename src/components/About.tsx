@@ -4,11 +4,10 @@ const About = () => {
   return (
     <>
       <div
-        className="flex flex-col items-center  bg-white
-       xxl:py-80 xl:py-60 lg:py-40 md:py-20  xs:py-10  us"
+        className="h-screen flex flex-col items-center justify-center bg-white us"
       >
 
-          <motion.div
+          {/* <motion.div
             variants={{
               offscreen: {
                 // 画面外の場合のスタイル
@@ -27,17 +26,17 @@ const About = () => {
             initial="offscreen" // 初期表示はoffscreen
             whileInView="onscreen" // 画面内に入ったらonscreen
             viewport={{ once: false, amount: 0 }}
-          >
+          > */}
             <h2 className="flex justify-center md:mb-20 xs:mb-10 md:text-5xl xs:text-3xl">
               Career
             </h2>
-          </motion.div>
+          {/* </motion.div> */}
 
           <motion.div
             variants={{
               offscreen: {
                 // 画面外の場合のスタイル
-                y: 100,
+                // y: 100,
                 opacity: 0,
               },
               onscreen: {
@@ -45,7 +44,8 @@ const About = () => {
                 y: 0,
                 opacity: 1,
                 transition: {
-                  duration: 1,
+                  duration: 3,
+                  type: "spring"
                 },
               },
             }}
