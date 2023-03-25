@@ -19,7 +19,7 @@ const MyAvatar = () => {
   return (
     <>
       <div className="flex md:flex-row xs:flex-col items-center justify-center responsive">
-        <img width={300} src={Iam2} alt="iam" className="rounded-10 mb-14 " />
+        <img width={150} src={Iam2} alt="iam" className="rounded-10 mb-14 " />
         <div className="md:ml-10 xs:ml-0  us">
         <motion.div
         className="demo"
