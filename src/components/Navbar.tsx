@@ -81,12 +81,12 @@ const Navbar = () => {
         <nav
           className={
             openMenu
-              ? "text-left fixed bg-slate-50 bg-opacity-90 right-0 top-0 w-2/5 h-44 flex flex-col justify-start pt-8 px-5 ease-out duration-1000 "
+              ? "text-left fixed bg-slate-50 bg-opacity-90 right-0 top-0 w-2/5 flex flex-col justify-start px-5 ease-out duration-1000 "
               : "fixed top-[-100%] right-0 w-2/5 ease-in duration-1000  "
           }
         >
           <ul className="items-center">
-            <li className="mr-5">
+            <li className="mr-5 mb-5 mt-10">
               <Link to={`/`}>
                 <a href="">TOP</a>
               </Link>
@@ -103,7 +103,7 @@ const Navbar = () => {
                 </a>
               </Link>
             </li>
-            <li className="mr-5">
+            <li className="mr-5 my-5">
               <Link to={`/Skills2/`}>
                 <a
                   href=""
@@ -115,7 +115,7 @@ const Navbar = () => {
                 </a>
               </Link>
             </li>
-            <li className="mr-5">
+            <li className="mr-5 my-5">
               <Link to={`/Works2/`}>
                 <a
                   href=""
@@ -127,7 +127,7 @@ const Navbar = () => {
                 </a>
               </Link>
             </li>
-            <li className="mr-5">
+            <li className="mr-5 my-5">
               <a
                 onClick={() =>
                   window.scrollTo({ top: 2000, behavior: "smooth" })
